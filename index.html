@@ -1,1 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Consultoría | ÁgilCare Consulting para Hospital Minimed</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados basados en el manual de marca de ÁgilCare */
+        :root {
+            --navy: #003C6E;
+            --teal: #006D77;
+            --light-teal: #E5F4F2;
+            --accent-orange: #FFA41B;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--navy);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .bg-teal { background-color: var(--teal); }
+        .text-teal { color: var(--teal); }
+        .bg-light-teal { background-color: var(--light-teal); }
+        .border-accent-orange { border-color: var(--accent-orange); }
+        .text-accent-orange { color: var(--accent-orange); }
+        .brand-logo .agil { color: var(--navy); }
+        .brand-logo .care { color: var(--teal); }
+
+        /* Estilo para la línea ascendente en la 'i' del logo */
+        .brand-logo .care::before {
+            content: '';
+            display: inline-block;
+            width: 2px;
+            height: 8px;
+            background-color: var(--teal);
+            transform: rotate(-20deg) translate(-2px, -10px);
+            position: absolute;
+        }
+
+        /* Animación suave para la aparición de elementos */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Iconos con checklist */
+        .checked-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 1rem;
+        }
+        .checked-list li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--teal);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Header y Navegación -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold brand-logo">
+                <span class="agil">Ágil</span><span class="care">Care</span> Consulting
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#vision" class="text-gray-600 hover:text-teal">Visión</a>
+                <a href="#solucion" class="text-gray-600 hover:text-teal">Solución</a>
+                <a href="#resultados" class="text-gray-600 hover:text-teal">Resultados</a>
+                <a href="#propuesta" class="text-gray-600 hover:text-teal">Propuesta</a>
+                <a href="#contacto" class="bg-teal text-white px-4 py-2 rounded-full hover:bg-navy transition duration-300">Contactar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <main class="bg-light-teal">
+        <div class="container mx-auto px-6 py-20 md:py-32 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-navy mb-4">Transformando la Atención Geriátrica</h1>
+            <p class="text-lg md:text-xl text-teal mb-8 max-w-3xl mx-auto">Propuesta de Consultoría Clínica y Operativa para optimizar el cuidado de alta complejidad en <strong>Hospital Minimed, Panamá</strong>.</p>
+            <a href="#solucion" class="bg-accent-orange text-white font-bold py-3 px-8 rounded-full text-lg hover:opacity-90 transition duration-300">Descubrir la Solución</a>
+            <p class="text-sm text-gray-500 mt-4">Preparada por ÁgilCare Consulting | 4 de julio de 2025</p>
+        </div>
+    </main>
+
+    <!-- Sección Visión -->
+    <section id="vision" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-navy">Nuestra Visión</h2>
+                <p class="text-lg text-teal mt-2">Un modelo de cuidado eficiente, sostenible y centrado en el paciente.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-5xl text-accent-orange mb-4">📈</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Modelo Escalonado</h3>
+                    <p class="text-gray-600">Implementar un sistema de atención flexible que se adapte a las necesidades cambiantes de los pacientes geriátricos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-5xl text-accent-orange mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Reducción de Costos</h3>
+                    <p class="text-gray-600">Optimizar los recursos y reducir costos hospitalarios sin comprometer la excelencia en la calidad asistencial.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div class="text-5xl text-accent-orange mb-4">🤝</div>
+                    <h3 class="text-xl font-bold text-navy mb-2">Sostenibilidad del Contrato</h3>
+                    <p class="text-gray-600">Garantizar la viabilidad y renovación del contrato con AXA a través de una eficiencia clínica y operativa demostrable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Retos -->
+    <section id="retos" class="bg-light-teal py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-navy">Comprendemos sus Retos Actuales</h2>
+                <p class="text-lg text-teal mt-2">Identificamos los desafíos clave en la gestión de pacientes geriátricos complejos.</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-start space-x-4">
+                    <div class="text-3xl text-teal">🏨</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-navy">Estancias Prolongadas</h4>
+                        <p class="text-gray-600">Alta ocupación de camas que limita la capacidad de rotación y admisión de nuevos pacientes.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-3xl text-teal">🔄</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-navy">Reingresos Frecuentes</h4>
+                        <p class="text-gray-600">Pacientes que regresan al poco tiempo del alta, elevando costos y afectando su calidad de vida.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-3xl text-teal">🧪</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-navy">Uso de Recursos</h4>
+                        <p class="text-gray-600">Poca estandarización en el uso de laboratorio, imagenología y medicamentos de alto costo.</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <div class="text-3xl text-teal">📄</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-navy">Reportes al Financiador</h4>
+                        <p class="text-gray-600">Necesidad de justificaciones clínicas sólidas y detalladas para el financiador (AXA).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Solución 360 -->
+    <section id="solucion" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-navy">Nuestra Solución: Una Consultoría 360°</h2>
+                <p class="text-lg text-teal mt-2">Una perspectiva integral para transformar el ciclo de cuidado del paciente.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Hospitalización en Casa</h3>
+                    <p class="text-gray-600">Trasladar la atención hospitalaria a un entorno domiciliario seguro y eficaz.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Egreso Temprano Seguro</h3>
+                    <p class="text-gray-600">Asegurar un alta temprana y bien coordinada con continuidad en el cuidado.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Uso Racional de Recursos</h3>
+                    <p class="text-gray-600">Optimizar la utilización de insumos, laboratorios y servicios médicos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Capacitación del Personal</h3>
+                    <p class="text-gray-600">Fortalecer las habilidades del equipo médico y asistencial en geriatría.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Indicadores de Desempeño</h3>
+                    <p class="text-gray-600">Medir y monitorear la eficacia de las intervenciones con KPIs claros.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg border-l-4 border-accent-orange shadow-md">
+                    <h3 class="font-bold text-xl text-navy mb-2">Interfaz con Financiador</h3>
+                    <p class="text-gray-600">Establecer una comunicación fluida, transparente y proactiva con AXA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Fases y Cronograma -->
+    <section id="cronograma" class="bg-light-teal py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-navy">Fases y Cronograma de Entrega</h2>
+                <p class="text-lg text-teal mt-2">Un plan de <span class="text-accent-orange font-bold">6 meses</span> para una implementación exitosa y sostenible.</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative border-l-2 border-teal">
+                    <!-- Fase 1 -->
+                    <div class="mb-8 ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-teal rounded-full -left-4 ring-4 ring-white">
+                            <span class="text-white font-bold">1</span>
+                        </span>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-navy">Fase 1: Diagnóstico y Diseño</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Duración: 1 Mes</time>
+                            <p class="text-base font-normal text-gray-600">Mapeo de procesos actuales y diseño del blueprint detallado del nuevo modelo de atención.</p>
+                        </div>
+                    </div>
+                    <!-- Fase 2 -->
+                    <div class="mb-8 ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-teal rounded-full -left-4 ring-4 ring-white">
+                            <span class="text-white font-bold">2</span>
+                        </span>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-navy">Fase 2: Implementación Guiada</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Duración: 2 Meses</time>
+                            <p class="text-base font-normal text-gray-600">Puesta en marcha de protocolos, flujogramas y capacitaciones prácticas al personal clínico y administrativo.</p>
+                        </div>
+                    </div>
+                    <!-- Fase 3 -->
+                    <div class="ml-6">
+                        <span class="absolute flex items-center justify-center w-8 h-8 bg-teal rounded-full -left-4 ring-4 ring-white">
+                            <span class="text-white font-bold">3</span>
+                        </span>
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-navy">Fase 3: Acompañamiento Activo</h3>
+                            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">Duración: 3 Meses</time>
+                            <p class="text-base font-normal text-gray-600">Monitoreo de KPIs, coaching en tiempo real y optimización continua del modelo para asegurar resultados sostenibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Resultados Esperados -->
+    <section id="resultados" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-navy">Resultados Esperados: Impacto Medible</h2>
+                <p class="text-lg text-teal mt-2">Generamos resultados tangibles para su operación clínica y financiera.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/E5F4F2/003C6E?text=Impacto+Clínico+y+Financiero" alt="Gráfico de impacto" class="rounded-lg shadow-lg">
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-light-teal p-6 rounded-lg">
+                        <p class="text-teal font-bold">Reducción en Días de Estancia</p>
+                        <p class="text-3xl font-bold text-navy">-20% a -30%</p>
+                    </div>
+                    <div class="bg-light-teal p-6 rounded-lg">
+                        <p class="text-teal font-bold">Tasa de Reingresos a 30 Días</p>
+                        <p class="text-3xl font-bold text-navy">< 10%</p>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 pl-4">
+                        <li>Disminución del gasto por paciente.</li>
+                        <li>Mejora en la satisfacción del financiador (AXA).</li>
+                        <li>Aumento de la capacidad de rotación de camas.</li>
+                        <li>Mejora en la experiencia del paciente y su familia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Propuesta Comercial -->
+    <section id="propuesta" class="bg-navy text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">Propuesta Comercial: Una Alianza Estratégica</h2>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">Alineamos nuestros intereses con los de Minimed. Nuestro éxito está directamente ligado al suyo, sin inversión fija inicial.</p>
+            <div class="bg-white text-navy inline-block p-8 rounded-lg shadow-2xl">
+                <p class="text-teal text-lg font-bold">MODELO DE REMUNERACIÓN</p>
+                <p class="text-5xl font-bold my-2">10% <span class="text-2xl font-normal">mensual</span></p>
+                <p class="text-gray-600">Sobre el valor facturado de hospitalización a AXA</p>
+            </div>
+            <p class="mt-8 text-gray-400">Este modelo basado en desempeño asegura un retorno sobre la inversión claro y medible.</p>
+        </div>
+    </section>
+
+    <!-- Sección Próximos Pasos -->
+    <section id="contacto" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-navy mb-4">Próximos Pasos</h2>
+            <p class="text-lg text-teal mb-10">Estamos listos para iniciar esta transformación junto a ustedes.</p>
+            <div class="max-w-2xl mx-auto text-left">
+                <ul class="checked-list">
+                    <li>Validación del alcance y aprobación final de la propuesta.</li>
+                    <li>Firma del acuerdo de servicios y conformación del equipo de trabajo.</li>
+                    <li>Reunión de kick-off con stakeholders clínicos, operativos y AXA.</li>
+                    <li>Inicio oficial de la Fase 1: <strong>7 de Julio de 2025</strong>.</li>
+                </ul>
+            </div>
+            <a href="mailto:contacto@agilcare.com" class="mt-12 inline-block bg-accent-orange text-white font-bold py-3 px-8 rounded-full text-lg hover:opacity-90 transition duration-300">Contactar para Iniciar</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold brand-logo mb-4">
+                <span class="text-white">Ágil</span><span class="text-teal">Care</span><span class="text-white"> Consulting</span>
+            </div>
+            <p>Optimizando el cuidado, garantizando el futuro.</p>
+            <p class="text-sm text-gray-400 mt-4">&copy; 2025 ÁgilCare Consulting. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
