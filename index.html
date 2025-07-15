@@ -77,6 +77,9 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+        .hero-text-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -90,20 +93,20 @@
             <div class="hidden md:flex space-x-6">
                 <a href="#vision" class="text-gray-600 hover:text-teal">Visión</a>
                 <a href="#desafios" class="text-gray-600 hover:text-teal">Desafíos</a>
-                <a href="#solucion-alcance" class="text-gray-600 hover:text-teal">Solución y Alcance</a>
+                <a href="#solucion-alcance" class="text-gray-600 hover:text-teal">Nuestra Solución</a>
                 <a href="#resultados" class="text-gray-600 hover:text-teal">Resultados</a>
                 <a href="#contacto" class="bg-teal text-white px-4 py-2 rounded-full hover:bg-navy transition duration-300">Contactar</a>
             </div>
         </nav>
     </header>
 
-    <!-- Sección Principal (Hero) -->
-    <main class="bg-light-teal">
-        <div class="container mx-auto px-6 py-20 md:py-32 text-center fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold text-navy mb-4">Transformando la Atención Geriátrica</h1>
-            <p class="text-lg md:text-xl text-teal mb-8 max-w-3xl mx-auto">Propuesta de Consultoría Clínica y Operativa para optimizar el cuidado de alta complejidad en <strong>Hospital Minimed, Panamá</strong>.</p>
+    <!-- Sección Principal (Hero) con Imagen de Banner -->
+    <main style="background-image: linear-gradient(rgba(0, 60, 110, 0.65), rgba(0, 60, 110, 0.65)), url('https://ik.imagekit.io/50wnllxkw/equipo-de-medicos-especialistas-jovenes-de-pie-en-el-pasillo-del-hospital.jpg?updatedAt=1752611624766'); background-size: cover; background-position: center;">
+        <div class="container mx-auto px-6 py-28 md:py-40 text-center fade-in text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 hero-text-shadow">Optimizando el Flujo Intrahospitalario</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto hero-text-shadow">Propuesta de consultoría enfocada en reducir los días de estancia hospitalaria en <strong>Hospital Minimed, Panamá</strong>.</p>
             <a href="#solucion-alcance" class="bg-accent-orange text-white font-bold py-3 px-8 rounded-full text-lg hover:opacity-90 transition duration-300">Descubrir la Solución</a>
-            <p class="text-sm text-gray-500 mt-4">Preparada por ÁgilCare Consulting | 4 de julio de 2025</p>
+            <p class="text-sm text-gray-200 mt-4 hero-text-shadow">Preparada por ÁgilCare Consulting | 4 de julio de 2025</p>
         </div>
     </main>
 
@@ -116,19 +119,19 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="text-5xl text-accent-orange mb-4">📈</div>
-                    <h3 class="text-xl font-bold text-navy mb-2">Modelo Escalonado</h3>
-                    <p class="text-gray-600">Implementar un sistema de atención flexible que se adapte a las necesidades cambiantes de los pacientes geriátricos.</p>
+                    <img src="https://ik.imagekit.io/50wnllxkw/operaciones.png?updatedAt=1752611776793" alt="Eficiencia Clínica" class="w-24 h-24 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-navy mb-2">Eficiencia Clínica</h3>
+                    <p class="text-gray-600">Implementar un modelo de gestión clínica ágil para acelerar los procesos de atención y toma de decisiones.</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="text-5xl text-accent-orange mb-4">💰</div>
-                    <h3 class="text-xl font-bold text-navy mb-2">Reducción de Costos</h3>
-                    <p class="text-gray-600">Optimizar los recursos y reducir costos hospitalarios sin comprometer la excelencia en la calidad asistencial.</p>
+                    <img src="https://ik.imagekit.io/50wnllxkw/costos.png?updatedAt=1752611835338" alt="Reducción de Estancia" class="w-24 h-24 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-navy mb-2">Reducción de Estancia</h3>
+                    <p class="text-gray-600">Disminuir la estancia hospitalaria promedio, liberando camas y optimizando la capacidad instalada.</p>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="text-5xl text-accent-orange mb-4">🤝</div>
+                    <img src="https://ik.imagekit.io/50wnllxkw/commitment.png?updatedAt=1752014742810" alt="Sostenibilidad del Contrato" class="w-24 h-24 mx-auto mb-4">
                     <h3 class="text-xl font-bold text-navy mb-2">Sostenibilidad del Contrato</h3>
-                    <p class="text-gray-600">Garantizar la viabilidad y renovación del contrato con AXA a través de una eficiencia clínica y operativa demostrable.</p>
+                    <p class="text-gray-600">Garantizar la viabilidad y renovación del contrato con AXA a través de una eficiencia operativa demostrable.</p>
                 </div>
             </div>
         </div>
@@ -174,29 +177,28 @@
         </div>
     </section>
 
-    <!-- Sección Solución Integral y Alcance -->
+    <!-- Sección Solución Enfocada -->
     <section id="solucion-alcance" class="py-20">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-navy">Nuestra Solución Integral y Alcance del Servicio</h2>
-                <p class="text-lg text-teal mt-2">Implementamos un modelo de consultoría activa y presente en su operación desde el día 1.</p>
+                <h2 class="text-4xl font-bold text-navy">Nuestra Solución Enfocada: Optimización Intrahospitalaria</h2>
+                <p class="text-lg text-teal mt-2">Un modelo centrado en la eficiencia clínica para reducir la estancia hospitalaria desde el día 1.</p>
             </div>
-            <div class="max-w-5xl mx-auto space-y-8">
+            <div class="max-w-4xl mx-auto space-y-8">
                 <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent-orange">
-                    <h3 class="font-bold text-2xl text-navy mb-3">1. Enfoque Médico en Sitio</h3>
-                    <p class="text-gray-600">Asignamos un <span class="font-bold">médico presencial</span> dedicado, quien actúa como enlace directo con nuestro equipo de especialistas en egreso temprano. Su rol es asegurar que el hospital cumpla estrictamente con los parámetros clínicos para altas seguras y eficientes, optimizando la estancia hospitalaria y la comunicación con el financiador AXA.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent-orange">
-                    <h3 class="font-bold text-2xl text-navy mb-3">2. Consultoría en Procesos y Analítica de Datos</h3>
-                    <p class="text-gray-600">Incorporamos un <span class="font-bold">consultor experto</span> en la optimización de procesos internos y la gestión de datos. Este rol es responsable de analizar la operación, generar informes periódicos de desempeño para AXA y apoyar activamente en la implementación de un modelo de gestión domiciliaria de clase mundial.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-lg border-l-4 border-accent-orange">
-                    <h3 class="font-bold text-2xl text-navy mb-3">3. Gestión Administrativa Integral</h3>
-                    <p class="text-gray-600">Ofrecemos <span class="font-bold">soporte administrativo completo</span> para la gestión de reclamos, presentación efectiva de cuentas y agilización de los procesos de autorización ante AXA. Nuestro objetivo es reducir la carga administrativa del hospital y asegurar un flujo de caja saludable.</p>
+                    <h3 class="font-bold text-2xl text-navy mb-3">1. Médico en Sitio y Optimización del Flujo de Atención</h3>
+                    <p class="text-gray-600 mb-4">Asignamos un <span class="font-bold">médico presencial</span> dedicado a la gestión del flujo de pacientes. Este profesional se integra a su equipo para liderar la optimización del proceso de atención intrahospitalaria, con las siguientes funciones clave:</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Rondas clínicas diarias</strong> conjuntas para evaluar proactivamente el progreso del paciente.</li>
+                        <li><strong>Identificación de hitos clínicos</strong> que permitan planificar un egreso temprano y seguro.</li>
+                        <li><strong>Coordinación y agilización</strong> de interconsultas, estudios de laboratorio e imagenología para evitar cuellos de botella.</li>
+                        <li><strong>Resolución de barreras</strong> administrativas o clínicas que retrasen el plan de tratamiento.</li>
+                        <li><strong>Aseguramiento de la documentación clínica</strong> robusta para facilitar la comunicación y justificación ante AXA.</li>
+                    </ul>
                 </div>
                 <div class="bg-light-teal p-8 rounded-lg border-l-4 border-teal">
-                    <h3 class="font-bold text-2xl text-navy mb-3">4. Confidencialidad y Remuneración</h3>
-                    <p class="text-gray-600">Operamos bajo estrictas <span class="font-bold">cláusulas de confidencialidad</span>. Nuestra remuneración se alinea con su éxito: un <span class="font-bold text-accent-orange">10% del monto total de la facturación</span> generada por los negocios derivados de esta consultoría, como contraprestación a nuestro servicio integral.</p>
+                    <h3 class="font-bold text-2xl text-navy mb-3">2. Alianza Estratégica y Remuneración</h3>
+                    <p class="text-gray-600">Operamos bajo estrictas <span class="font-bold">cláusulas de confidencialidad</span>. Nuestra remuneración se alinea con su éxito y se basa en la facturación de los <span class="font-bold">pacientes hospitalizados de AXA</span>. Por cada egreso gestionado bajo nuestro modelo, se validará la facturación hospitalaria total generada por ese paciente y se calculará un <span class="font-bold text-accent-orange">10% de remuneración</span> para ÁgilCare Consulting como contraprestación a nuestro servicio.</p>
                 </div>
             </div>
         </div>
